@@ -610,6 +610,17 @@ h3 {
     font-weight: 700;
 }
 
+.project-link-force-visible {
+    margin-top: 8px;
+    margin-bottom: 8px;
+    border-color: #5ef3ff;
+    background: rgba(34, 211, 238, 0.28);
+    color: #bfffff;
+    font-size: 0.82rem;
+    font-weight: 800;
+    letter-spacing: 0.04em;
+}
+
 .timeline {
     display: flex;
     flex-direction: column;
