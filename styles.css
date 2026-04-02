@@ -531,6 +531,29 @@ h3 {
     align-items: center;
 }
 
+.project-link-inline {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4px 9px;
+    border: 1px solid var(--accent);
+    border-radius: 4px;
+    color: var(--accent);
+    background: rgba(34, 211, 238, 0.1);
+    text-decoration: none;
+    font-family: "JetBrains Mono", monospace;
+    font-size: 0.68rem;
+}
+
+.project-title-link {
+    color: #e8f0f8;
+    text-decoration: none;
+}
+
+.project-title-link:hover {
+    color: var(--accent);
+}
+
 .tag {
     background: var(--accent-dim);
     border: 1px solid rgba(34,211,238,0.22);
