@@ -149,6 +149,13 @@ footer {
 
 .hero { padding: 56px 0 40px; }
 
+.hero-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 290px;
+    gap: 20px;
+    align-items: start;
+}
+
 .hero-terminal {
     border: 1px solid var(--border-bright);
     border-radius: 14px;
@@ -222,6 +229,50 @@ footer {
     display: flex;
     gap: 10px;
     flex-wrap: wrap;
+}
+
+.profile-card {
+    background: var(--surface);
+    border: 1px solid var(--border-bright);
+    border-radius: 14px;
+    padding: 14px;
+    box-shadow: var(--shadow);
+    text-align: center;
+}
+
+.profile-image {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 1px solid var(--border);
+}
+
+.profile-fallback {
+    display: none;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    border-radius: 10px;
+    border: 1px solid var(--border);
+    background: linear-gradient(135deg, #0f1624, #101f35);
+    color: var(--accent);
+    font-family: "JetBrains Mono", monospace;
+    font-size: 2rem;
+    font-weight: 700;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-card.no-image .profile-image { display: none; }
+
+.profile-card.no-image .profile-fallback { display: flex; }
+
+.profile-caption {
+    margin: 10px 0 2px;
+    font-family: "JetBrains Mono", monospace;
+    font-size: 0.74rem;
+    color: var(--muted);
+    letter-spacing: 0.06em;
 }
 
 .section {
@@ -493,6 +544,14 @@ h3 {
     font-size: 0.95rem;
 }
 
+.story-note {
+    margin: -14px 0 24px;
+    max-width: 78ch;
+    color: #90a7c3;
+    font-size: 0.84rem;
+    font-family: "JetBrains Mono", monospace;
+}
+
 .chapter-tag {
     display: inline-block;
     margin-bottom: 10px;
@@ -603,7 +662,22 @@ footer {
 .section:nth-of-type(6) { animation-delay: 340ms; }
 
 @media (max-width: 860px) {
+    .hero-layout { grid-template-columns: 1fr; }
+    .profile-card {
+        width: min(320px, 100%);
+        justify-self: center;
+    }
     .metrics-row { grid-template-columns: 1fr; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation: none !important;
+        transition: none !important;
+        scroll-behavior: auto !important;
+    }
 }
 
 @media (max-width: 620px) {

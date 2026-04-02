@@ -26,31 +26,41 @@
     </nav>
 
     <header class="hero">
-        <div class="hero-terminal">
-            <div class="terminal-bar">
-                <span class="dot dot-red"></span>
-                <span class="dot dot-yellow"></span>
-                <span class="dot dot-green"></span>
-                <span class="terminal-title">sarah@portfolio ~ </span>
-            </div>
-            <div class="terminal-body">
-                <p class="terminal-line"><span class="prompt">$</span> whoami</p>
-                <p class="terminal-output">Sarah Zanardi — Data Engineer · BI Analyst · Product Owner
+        <div class="hero-layout">
+            <div>
+                <div class="hero-terminal">
+                    <div class="terminal-bar">
+                        <span class="dot dot-red"></span>
+                        <span class="dot dot-yellow"></span>
+                        <span class="dot dot-green"></span>
+                        <span class="terminal-title">sarah@portfolio ~ </span>
+                    </div>
+                    <div class="terminal-body">
+                        <p class="terminal-line"><span class="prompt">$</span> whoami</p>
+                        <p class="terminal-output">Sarah Zanardi — Data Engineer · BI Analyst · Product Owner
 4+ years turning raw data into trusted business decisions.</p>
-                <p class="terminal-line"><span class="prompt">$</span> cat mission.txt</p>
-                <p class="terminal-output">I architect analytics ecosystems that transform raw data into trusted decisions.
+                        <p class="terminal-line"><span class="prompt">$</span> cat mission.txt</p>
+                        <p class="terminal-output">I architect analytics ecosystems that transform raw data into trusted decisions.
 From ETL pipelines to executive dashboards, I bridge engineering constraints
 and business strategy — end to end, with measurable impact.
 Experienced across financial services, port logistics and tech sectors.</p>
-                <p class="terminal-line"><span class="prompt">$</span> ls expertise/</p>
-                <p class="terminal-output green">data-engineering/  bi-strategy/  data-architecture/  product-ownership/  kpi-governance/</p>
-                <p class="terminal-line"><span class="prompt">$</span> <span class="cursor">▮</span></p>
+                        <p class="terminal-line"><span class="prompt">$</span> ls expertise/</p>
+                        <p class="terminal-output green">data-engineering/  bi-strategy/  data-architecture/  product-ownership/  kpi-governance/</p>
+                        <p class="terminal-line"><span class="prompt">$</span> <span class="cursor">▮</span></p>
+                    </div>
+                </div>
+                <div class="hero-cta">
+                    <a class="btn btn-primary" href="https://www.linkedin.com/in/sarah-zanardi-" target="_blank" rel="noreferrer">LinkedIn</a>
+                    <a class="btn btn-outline" href="https://github.com/SarahZanardi" target="_blank" rel="noreferrer">GitHub</a>
+                    <a class="btn btn-ghost" href="mailto:sarahzanardi056@gmail.com">sarahzanardi056@gmail.com</a>
+                </div>
             </div>
-        </div>
-        <div class="hero-cta">
-            <a class="btn btn-primary" href="https://www.linkedin.com/in/sarah-zanardi-" target="_blank" rel="noreferrer">LinkedIn</a>
-            <a class="btn btn-outline" href="https://github.com/SarahZanardi" target="_blank" rel="noreferrer">GitHub</a>
-            <a class="btn btn-ghost" href="mailto:sarahzanardi056@gmail.com">sarahzanardi056@gmail.com</a>
+
+            <aside class="profile-card" id="profileCard">
+                <img src="assets/sarah-zanardi.jpg" alt="Sarah Zanardi" class="profile-image" onerror="document.getElementById('profileCard').classList.add('no-image')">
+                <div class="profile-fallback">SZ</div>
+                <p class="profile-caption">Data Strategy · BI · Product</p>
+            </aside>
         </div>
     </header>
 
@@ -194,13 +204,13 @@ Experienced across financial services, port logistics and tech sectors.</p>
                 <div class="stack-row">
                     <span class="stack-label">BI & Viz</span>
                     <div class="badges">
-                        <span>Power BI</span><span>Looker</span><span>Tableau</span>
+                        <span>Power BI</span><span>Tableau</span><span>Qlik</span>
                     </div>
                 </div>
                 <div class="stack-row">
                     <span class="stack-label">Engineering</span>
                     <div class="badges">
-                        <span>ETL Pipelines</span><span>Data Lake</span><span>Data Warehouse</span><span>dbt</span><span>Airflow</span>
+                        <span>ETL Pipelines</span><span>Data Lake</span><span>Data Warehouse</span><span>Data Quality</span><span>Data Governance</span>
                     </div>
                 </div>
                 <div class="stack-row">
@@ -253,6 +263,7 @@ Experienced across financial services, port logistics and tech sectors.</p>
             <p class="eyebrow">// career_story</p>
             <h2>Storytelling timeline: from internship to product leadership.</h2>
             <p class="story-intro">In four years, I moved from operational analytics to strategic product ownership, consistently translating complex data into clear business decisions.</p>
+            <p class="story-note">Note: in 2024, my transition from HM Engenharia to Oba Hortifruti included overlapping activities during the handoff period.</p>
             <div class="timeline">
 
                 <article class="timeline-item">
