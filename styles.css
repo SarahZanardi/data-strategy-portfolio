@@ -313,6 +313,7 @@ footer {
 .section {
     padding: 52px 0;
     border-top: 1px solid var(--border);
+    scroll-margin-top: 92px;
 }
 
 .eyebrow {
@@ -578,6 +579,23 @@ h3 {
     font-size: 0.88rem;
     line-height: 1.65;
     flex: 1;
+}
+
+.project-direct-link {
+    flex: 0;
+    font-size: 0.78rem;
+    color: #9db7d4;
+    line-height: 1.45;
+}
+
+.project-direct-link a {
+    color: var(--accent);
+    text-decoration: none;
+    word-break: break-all;
+}
+
+.project-direct-link a:hover {
+    text-decoration: underline;
 }
 
 .project-link {
