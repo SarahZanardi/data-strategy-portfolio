@@ -278,6 +278,38 @@ footer {
     letter-spacing: 0.06em;
 }
 
+.profile-highlights {
+    margin-top: 18px;
+    display: grid;
+    gap: 10px;
+    text-align: left;
+}
+
+.profile-highlight {
+    padding: 12px 12px 13px;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.01), rgba(34, 211, 238, 0.03));
+}
+
+.profile-highlight-label {
+    display: block;
+    margin-bottom: 6px;
+    font-family: "JetBrains Mono", monospace;
+    font-size: 0.68rem;
+    letter-spacing: 0.08em;
+    color: var(--accent);
+    text-transform: uppercase;
+}
+
+.profile-highlight strong {
+    display: block;
+    color: #e8f0f8;
+    font-size: 0.84rem;
+    line-height: 1.5;
+    font-weight: 600;
+}
+
 .section {
     padding: 52px 0;
     border-top: 1px solid var(--border);
