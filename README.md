@@ -1,6 +1,6 @@
 # Data Strategy Portfolio
 
-Portfolio pessoal de Sarah Zanardi, focado em Data Strategy, BI e Product Analytics.
+Portfolio pessoal de Sarah Zanardi, com foco em Data & Analytics, Logistics & Supply Chain, PMP® e Oracle Cloud & AI Foundations.
 
 ## Stack
 
